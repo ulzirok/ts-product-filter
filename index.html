@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>Фильтр товаров</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  
+  <h1>Товары</h1>
+
+  <label for="category">Фильтр по категории:</label>
+  <select id="category">
+    <option value="all">Все</option>
+    <option value="electronics">Электроника</option>
+    <option value="clothes">Одежда</option>
+    <option value="books">Книги</option>
+  </select>
+
+  <ul id="productList"></ul>
+
+  <script src="app.js"></script>
 </body>
 </html>
